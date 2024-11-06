@@ -1,0 +1,171 @@
+swagger: "2.0"
+info:
+  description: "API для работы с категориями, производителями и заказчиками.\nКлюч:dfgkd58345f8i43fd83s9sdv"
+  version: "1.1.0"
+  title: "Goods API"
+
+basePath: "/"
+schemes:
+  - "http"
+paths:
+  /categories:
+    get:
+      summary: "Получить список категорий"
+      tags:
+        - "Категории"
+      parameters:
+        - name: "apikey"
+          in: "query"
+          required: true
+          type: "string"
+      responses:
+        200:
+          description: "Список категорий"
+          schema:
+            type: "array"
+            items:
+              properties:
+                id:
+                  type: "integer"
+                name:
+                  type: "string"
+                logo:
+                  type: "string"
+        401:
+          description: "Неавторизованный доступ"
+
+  /manufacturers:
+    get:
+      summary: "Получить список производителей"
+      tags:
+        - "Производители"
+      parameters:
+        - name: "apikey"
+          in: "query"
+          required: true
+          type: "string"
+      responses:
+        200:
+          description: "Список производителей"
+          schema:
+            type: "array"
+            items:
+              properties:
+                id:
+                  type: "integer"
+                name:
+                  type: "string"
+        401:
+          description: "Неавторизованный доступ"
+
+  /customers:
+    post:
+      summary: "Добавить нового заказчика"
+      tags:
+        - "Заказчики"
+      parameters:
+        - name: "apikey"
+          in: "query"
+          required: true
+          type: "string"
+        - name: "body"
+          in: "body"
+          required: true
+          schema:
+            properties:
+              new_customer_name:
+                type: "string"
+      responses:
+        200:
+          description: "Успешно добавлено"
+        401:
+          description: "Неавторизованный доступ"
+    get:
+      summary: "Получить список заказчиков"
+      tags:
+        - "Заказчики"
+      parameters:
+        - name: "apikey"
+          in: "query"
+          required: true
+          type: "string"
+      responses:
+        200:
+          description: "Список заказчиков"
+          schema:
+            type: "array"
+            items:
+              properties:
+                id:
+                  type: "integer"
+                name:
+                  type: "string"
+        401:
+          description: "Неавторизованный доступ"
+
+  /customers/{id}:
+    get:
+      summary: "Получить заказчика по ID"
+      tags:
+        - "Заказчики"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          type: "integer"
+        - name: "apikey"
+          in: "query"
+          required: true
+          type: "string"
+      responses:
+        200:
+          description: "Заказчик по ID"
+          schema:
+            properties:
+              id:
+                type: "integer"
+              name:
+                type: "string"
+        401:
+          description: "Неавторизованный доступ"
+
+    put:
+      summary: "Обновить информацию о заказчике"
+      tags:
+        - "Заказчики"
+      parameters:
+        - name: "apikey"
+          in: "query"
+          required: true
+          type: "string"
+        - name: "body"
+          in: "body"
+          required: true
+          schema:
+            properties:
+              new_name:
+                type: "string"
+      responses:
+        200:
+          description: "Успешно обновлено"
+        401:
+          description: "Неавторизованный доступ"
+
+    delete:
+      summary: "Удалить заказчика"
+      tags:
+        - "Заказчики"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          type: "integer"
+        - name: "apikey"
+          in: "query"
+          required: true
+          type: "string"
+      responses:
+        200:
+          description: "Успешно удалено"
+        401:
+          description: "Неавторизованный доступ"

@@ -1,0 +1,40 @@
+version:'3.12'
+services:
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_USER: postgres  # можно указать пользователя
+      POSTGRES_DB: mydb        # и базу данных, если необходимо
+    ports:
+      - 5432:5432
+    volumes:
+      - volume_postgres:/data/postgres
+      - ./dumps:/docker-entrypoint-initdb.d
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: denisovroman280@gmail.com  # задайте почту для входа
+      PGADMIN_DEFAULT_PASSWORD: fuckshit11
+      PGADMIN_LISTEN_PORT: 8081
+    ports:
+      - 8081:8081  # порт для доступа к pgAdmin
+  api:
+    build: .
+    restart: always
+    ports:
+      - 5000:5000  # Укажите порт, на котором будет работать ваш API
+    depends_on:
+      - db
+volumes:
+  volume_postgres:

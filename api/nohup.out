@@ -1,0 +1,182 @@
+ * Serving Flask app 'api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.3.223:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+95.214.8.202 - - [21/Oct/2024 19:30:46] "GET /groups HTTP/1.1" 200 -
+95.214.8.202 - - [21/Oct/2024 19:30:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+95.214.8.202 - - [21/Oct/2024 19:30:54] "GET /groups HTTP/1.1" 200 -
+95.214.8.202 - - [21/Oct/2024 19:30:56] "GET /schedule?group=АБ-421 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 19:39:45] "[33mGET /shedule HTTP/1.1[0m" 404 -
+212.20.46.80 - - [21/Oct/2024 19:39:49] "GET /schedule HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 20:04:45] "GET /schedule?group=ИП-22 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 20:04:51] "GET /schedule?group=ИП-23 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 20:04:57] "GET /schedule?group=ИП-21 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:11:56] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:11:58] "GET /schedule?group=АБс-427 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:12:55] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:12:57] "GET /schedule?group=АБ-422 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:13:08] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:13:52] "GET /schedule?group=РГ-45 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:14:12] "GET /schedule?group=РГ-45 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:14:50] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:14:54] "GET /schedule?group=ПС-31 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:14:59] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:23:19] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:25:14] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:25:45] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:25:49] "GET /schedule?group=АБ-422 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:27:05] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:27:08] "GET /schedule?group=АБ-422 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:27:28] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:27:30] "GET /schedule?group=АВТ-408 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:30:10] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:30:16] "GET /schedule?group=АБс-425 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:31:02] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:31:30] "GET /schedule?group=ИП-21 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:33:08] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:33:10] "GET /schedule?group=АВТ-410 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:33:19] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:33:23] "GET /schedule?group=СД-41 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:37:02] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:37:05] "GET /schedule?group=АБ-422 HTTP/1.1" 200 -
+212.20.46.80 - - [21/Oct/2024 21:51:01] "GET /groups HTTP/1.1" 200 -
+212.20.46.80 - - [22/Oct/2024 19:05:32] "GET /schedule?group=РГ-45 HTTP/1.1" 200 -
+212.20.46.80 - - [22/Oct/2024 19:05:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
+Traceback (most recent call last):
+  File "/home/postgresql/api/goods.py", line 90, in <module>
+    api.add_resource(Products, '/products')
+  File "/usr/local/lib/python3.12/site-packages/flask_restful/__init__.py", line 413, in add_resource
+    self._register_view(self.app, resource, *urls, **kwargs)
+  File "/usr/local/lib/python3.12/site-packages/flask_restful/__init__.py", line 449, in _register_view
+    raise ValueError('This endpoint (%s) is already set to the class %s.' % (endpoint, previous_view_class.__name__))
+ValueError: This endpoint (products) is already set to the class Products.
+ * Detected change in '/home/postgresql/api/goods.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 271-229-641
