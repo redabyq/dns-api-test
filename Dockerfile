@@ -1,8 +1,7 @@
-# Используем официальный образ Python
-FROM python:3.9-slim
+FROM python:3.12-slim
 
 # Устанавливаем рабочую директорию
-WORKDIR /api
+WORKDIR /app
 
 # Копируем зависимости и устанавливаем
 COPY requirements.txt .
@@ -12,4 +11,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY ./api /app/api
 
 # Указываем команду для запуска приложения
-CMD ["python", "-m", "api.goods"]
+CMD ["python3.12", "api/goods.py"]
